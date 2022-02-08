@@ -24,7 +24,7 @@ if (random() === 1) {
     return answer3;
     }
 }
-function checkScore(redWins, blueWins) {
+function checkScore(redWins, blueWins) { //checks score//
     if (round < 5) {
 
     } else if (round === 5 && redWins > blueWins) {
@@ -56,8 +56,10 @@ function game() { //plays one round//
         round++;
         return console.log('You chose ' + playerSelection.toLowerCase() + ' and the computer chose ' + computerSelection + '. Its a tie!');
     }
-}return playRound(playerSelection,  computerSelection());
+}return playRound(playerSelection,  computerSelection());//this is needeed to access the variable from the outside of this function scope//
 }
+
+//i have not officially learned loops yet, so i will come back and make the end of this a loop when i add html and css to the page.//
 game();
 checkScore(redWins, blueWins);
 playerSelection = prompt('Choose your fate');
