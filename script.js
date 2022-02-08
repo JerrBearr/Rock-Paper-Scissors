@@ -4,7 +4,6 @@ const choice3 = "scissors";
 const answer1 = choice1;
 const answer2 = choice2;
 const answer3 = choice3;
-let playerSelection = prompt('Choose your fate');
 let redWins = 0; 
 let blueWins = 0;
 let noWins = 0;
@@ -41,6 +40,7 @@ function checkScore(redWins, blueWins) { //checks score//
 function game() { //plays one round//
 
     function playRound (playerSelection, computerSelection) {
+
     if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissors' || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'rock') {
         redWins++;
         round++;
@@ -58,24 +58,8 @@ function game() { //plays one round//
     }
 }return playRound(playerSelection,  computerSelection());//this is needeed to access the variable from the outside of this function scope//
 }
-
-//i have not officially learned loops yet, so i will come back and make the end of this a loop when i add html and css to the page.//
-game();
-checkScore(redWins, blueWins);
-playerSelection = prompt('Choose your fate');
-
-game();
-checkScore(redWins, blueWins);
-playerSelection = prompt('Choose your fate');
-
-
-game();
-checkScore(redWins, blueWins);
-playerSelection = prompt('Choose your fate');
-
-game();
-checkScore(redWins, blueWins);
-playerSelection = prompt('Choose your fate');
-
-game();
+for (let i = 0; i < 5 ; i++) {
+    playerSelection = prompt('Choose your fate');
+    game();
+}
 checkScore(redWins, blueWins);

@@ -32,3 +32,5 @@ I am having a hard time with Javascript but it has been starting to really click
 This challenge was a lot of fun. I enjoyed struggling at the beginning and and by the end knowing for the most part what each different pice of my code did, and how it interacted with the global and local scopes. I spent a total of about 6-8 hours to get the Javascript up to this point, and this was my frist real interactive project. I am please with how it came out.
 
 As a side note, I showed my wife and the first thing she did was enter scissors, which brought up a bug becuase it told her that scissors tied with paper. This was a hilarious way to have to go through my entire if statements one by one and making sure I wrote down each possible combination of win/losses, and then made sure to mark them off in the apropriate statements.
+
+After taking a break and coming back, i ended up fixing a few pieces and adding a loop instead of calling the function 5 times. The code is shorter, and looks better now.
